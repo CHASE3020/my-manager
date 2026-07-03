@@ -18,9 +18,9 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", homeHandler)
 	http.HandleFunc("/login", loginHandler)
-	 http.Handle("/public/",http.FileServer(http.Dir("public")))
+	 http.Handle("/public/",http.StripPrefix("/public/",http.FileServer(http.Dir("public"))))
 
 
-	log.Println("Server running at http://localhost:8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Println("Server running at http://localhost:8000")
+	log.Fatal(http.ListenAndServe(":8000", nil))
 }
