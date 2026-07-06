@@ -11,17 +11,25 @@ body{
 }
 .homepage_tittle{
     margin: 0;
+    color: #005DA7;
     
+    
+    
+}
+
+p{
+    text-align: center;
 }
 
 input{
     border-radius: 10px;
+    border: none;
+    height: 47px;
+    width: 398px;
+    margin-bottom: 20px;
 }
 
-.img{
-    height: 33px;
-    width: 31px;
-}
+
 
 .logo-shape{
     margin-bottom: 5%;
@@ -35,35 +43,56 @@ input{
 }
 
 .container{
-    margin-top: 4%;
+    /* margin-top: 4%; */
+    gap: 23.5px;
+    padding: 23px;
     background-color:#E0E3E5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 85vh;
-    width: 60vh;
-    border-radius: 10px;
+    height: 778.5px;
+    max-width: 480px;
+    border-radius: 24px;
+    margin-top: 40px;
     align-content: center;
     
 
 
 }
 
-h1{
-    color: #005DA7;
-}
 
 .submit-button{
     margin-top: 3%;
-    height: 50px;
-    background-color: #50a3d3;
-    color: #005DA7;
-    border-radius: 10px;
+    height: 52px;
+    background-color: #005DA7;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
 }
 form{
     display: flex;
     gap: 10px;
     flex-direction: column;
     width: 30%;
+    height: 377.5px;
+    width: 398px;
+
+    
+}
+
+.arrow-shape{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: right;
+    
 }
